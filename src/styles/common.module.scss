@@ -1,0 +1,10 @@
+$primaryColor: #1890FF; // hover时颜色(同antd颜色)
+$backColor: #f0f2f5; // 背景颜色或边框颜色
+$buttonSpacing: 8px; // 按钮之间的间距
+$textButtonSpacing: 4px; // 文字形式按钮之间的间距
+:export {
+  primaryColor: $primaryColor;
+  backColor: $backColor;
+  buttonSpacing: $buttonSpacing;
+  textButtonSpacing: $textButtonSpacing;
+}
