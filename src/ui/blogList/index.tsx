@@ -1,4 +1,8 @@
+/**
+ * blog文件列表
+ */
 'use client'
+import { useRouter } from 'next/navigation';
 import { Collapse, List } from 'antd-mobile';
 
 interface MenuItem {
@@ -9,20 +13,22 @@ interface MenuConfig extends MenuItem {
   children: MenuItem[];
 }
 interface BlogListProps {
-  fileData: MenuConfig[];
+  catalogData: MenuConfig[];
+  dirKey: string;
 }
 const BlogList = (props: BlogListProps) => {
-  const { fileData } = props;
+  const { catalogData, dirKey } = props;
+  const router = useRouter();
 
   return (
     <Collapse accordion>
-      {fileData.map((dir: MenuConfig) => {
+      {catalogData.map((dir: MenuConfig) => {
         const { key, title, children = [] } = dir;
         if (children.length) {
           return (
             <Collapse.Panel key={key} title={title}>
               {children.map((file: MenuItem) => (
-                <List.Item key={file.key}>
+                <List.Item key={file.key} onClick={() => router.push(`/blog/${dirKey}/${title}/${file.title}`)}>
                   <div>
                     {file.title}
                   </div>

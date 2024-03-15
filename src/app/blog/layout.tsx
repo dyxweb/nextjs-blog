@@ -28,11 +28,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       icon: <UserOutline />
     }
   ];
+
+  const prefixPathname = pathname.split('/').slice(0, 3).join('/')
   return (
     <div className={styles.layout}>
       <div className={styles.content}>{children}</div>
       <div className={styles.tabBar}>
-        <TabBar onChange={onTabBarChange} activeKey={pathname}>
+        <TabBar onChange={onTabBarChange} activeKey={prefixPathname}>
           {tabs.map(item => (
             <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
           ))}

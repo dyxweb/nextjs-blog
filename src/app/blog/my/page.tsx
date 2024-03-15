@@ -1,10 +1,10 @@
-import BlogList from '@/components/blogList';
-import { getFileData } from '@/lib/getFileData';
+import BlogList from '@/ui/blogList';
+import { getFileCatalog } from '@/lib/blog';
 
 export default async function My() {
-  const fileData = await getFileData('public/md/gwy');
+  const catalogData = await getFileCatalog('public/md/gwy');
 
   return (
-    <BlogList fileData={fileData} />
+    <BlogList catalogData={catalogData} dirKey="my" />
   );
 }

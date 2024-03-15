@@ -1,0 +1,28 @@
+.navBox {
+  padding: 40px 20px 20px;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  .navItem {
+    padding-bottom: 8px;
+  }
+  .navH2 {
+    @extend .navItem;
+    font-size: 18px;
+  }
+  .navH3 {
+    @extend .navItem;
+    font-size: 16px;
+    padding-left: 12px;
+  }
+  .navH4 {
+    @extend .navItem;
+    font-size: 14px;
+    padding-left: 24px;
+  }
+  .navH5 {
+    @extend .navItem;
+    font-size: 12px;
+    padding-left: 36px;
+  }
+}

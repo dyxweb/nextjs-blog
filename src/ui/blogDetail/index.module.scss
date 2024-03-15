@@ -1,0 +1,8 @@
+@import "@/styles/common.module.scss";
+.blogDetail {
+  display: flex;
+  flex-direction: column;
+  .content {
+    overflow: auto;
+  }
+}
