@@ -1,0 +1,11 @@
+## react相关
+- react-big-calendar：事件日历组件库。
+- react-beautiful-dnd：拖拽组件库。
+- react-joyride：用户引导组件库。
+- react-advanced-cropper：图像自定义裁剪组件库。
+- react-colorful：颜色选择器。
+- react-spring：基于弹簧物理特性的React应用程序动画库。
+- react-tsparticles：自定义粒子动画库。
+- react-pdf-viewer：PDF预览组件库(收费)。
+- audio-player：React音乐播放器组件库。
+- image-slider：图像轮播组件库。

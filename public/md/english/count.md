@@ -1,0 +1,9 @@
+## count  计数
+- counter  计数器、柜台
+- discount  打折
+- recount  重数、叙述
+- miscount  数错
+- countable  可数的
+- countless  无数的
+- account  账户
+- accountant  会计

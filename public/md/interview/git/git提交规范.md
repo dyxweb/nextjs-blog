@@ -1,0 +1,12 @@
+## git提交规范
+- feat：新增功能
+- fix：修复bug
+- docs：文档变更
+- style：代码格式调整(空格、分号等格式)
+- refactor：代码重构
+- perf：改善性能
+- test：测试
+- build：项目构建或外部依赖变更
+- ci：持续集成相关调整
+- chore：变更构建流程或辅助工具
+- revert：代码回退

@@ -1,7 +1,10 @@
-export default function My() {
+import BlogList from '@/components/blogList';
+import { getFileData } from '@/lib/getFileData';
+
+export default async function My() {
+  const fileData = await getFileData('public/md/gwy');
+
   return (
-    <main>
-      my
-    </main>
+    <BlogList fileData={fileData} />
   );
 }
