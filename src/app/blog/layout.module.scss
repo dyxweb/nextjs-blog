@@ -1,0 +1,16 @@
+.layout {
+  background: #f0f2f5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .content {
+    position: relative;
+    overflow: auto;
+    flex-grow: 1;
+  }
+  .tabBar {
+    background: #fff;
+    flex-shrink: 0;
+  }
+}
